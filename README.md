@@ -1,5 +1,5 @@
 # SSH Honeypot Proof of Concept
-A proof of concept Docker container demonstrating that your username and password entries are visible when remoting in with SSH.
+A proof of concept Docker container demonstrating that your username and password inputs are visible to root users on the SSH server you're remoting in to.
 
 ## Instructions
 
