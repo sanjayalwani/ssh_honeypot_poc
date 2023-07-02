@@ -9,7 +9,7 @@ System dependencies: Docker and ssh
 
 1. `docker build -t ssh_honey_poc .`
 
-2. `docker run -t -d -p 9000:22 --cap-add=SYS_PTRACE --security-opt seccomp=unconfined ssh_honey_poc`
+2. `docker run -t -d -p 9000:22 --cap-add=SYS_PTRACE ssh_honey_poc`
 
    Note that this will attach SSH port 22/tcp of the container to port 9000 on your host system, feel free to use another port.
 
