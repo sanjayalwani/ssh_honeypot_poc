@@ -14,7 +14,7 @@ System dependencies: Docker and ssh
    Note that this will attach SSH port 22/tcp of the container to port 9000 on your host system, feel free to use another port.
 
 4. The container will be running and capturing all input to it's SSH port, through the binding to the host port localhost:9000.
-To SSH into the container run `ssh -p 90000 anyusernameyoulike@localhost`.
+To SSH into the container run `ssh -p 9000 anyusernameyoulike@localhost`.
 
 5. Once you're happy with your captures and it's time to tear down, simply run `docker ps` to obtain the container id, and then `docker cp <container id>:/capture .` to copy the capture file to your current directory.
 
